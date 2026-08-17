@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage[paperwidth=190.5mm, paperheight=254mm]{geometry}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage[dvipsnames]{xcolor}
+\doublespacing
+\definecolor{fttazul}{RGB}{10, 80, 140}
+\definecolor{fttverde}{RGB}{0,176,80}
+\setlength\parindent{0pt}
+\pagenumbering{gobble}
+\pagestyle{empty}
+\geometry{
+	landscape,
+	left=0mm,
+	top=0mm,
+	right=0mm,
+	bottom=0mm,
+}
+\usetikzlibrary {arrows.meta}
+
+\begin{document}
+\includegraphics{../portada.jpg}
+\newpage
+
+
+\newgeometry{
+	left=20mm,
+	top=20mm,
+	right=20mm,
+	bottom=20mm,
+}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+	\node[xshift=140mm,yshift=-21mm,anchor=north west] at (current page.north west){%
+	\includegraphics[width=80mm]{../logo}};
+	\node[xshift=-50mm,yshift=-50mm,anchor=north west] at (current page.north west){%
+	\includegraphics[width=120mm]{../logo2}};
+	\node[align=center] at (10.7,9) {\huge \textbf{\textcolor{fttazul}{INFORME FOTOGRÁFICO DE MANTENIMIENTO}}\\
+					                \huge \textbf{\textcolor{fttazul}{PREVENTIVO EJECUTADO.}}};

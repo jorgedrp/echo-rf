@@ -1,0 +1,23 @@
+%%%%%%%%%%%%%%% DIAPOSITIVA DE 3 FOTOS %%%%%%%%%%%%%%%
+\begin{tikzpicture}[remember picture,overlay]
+	\node[xshift=150mm,yshift=1mm,anchor=north west] at (current page.north west){%
+	\includegraphics[width=80mm]{../logo}};
+	\node[xshift=-50mm,yshift=-50mm,anchor=north west] at (current page.north west){%
+	\includegraphics[width=120mm]{../logo2}};
+	\draw[color=fttazul, line width=2mm] (0,-2) -- (12,-2) -- (12,-4) -- (23,-4);
+	\draw [arrows = {-Latex[width=14pt, length=14pt, color=fttazul]}] (23.25,-4) -- (23.3,-4);
+	\draw[color=fttverde, line width=2mm] (-0.2,-17.7) -- (20,-17.7);
+	\draw [arrows = {-Latex[width=100pt, length=50pt, color=fttazul]}] (21.55,-18.6) -- (21.6,-18.6);
+	\draw[color=fttazul, line width=20mm] (-0.2,-18.7) -- (20,-18.7);
+	\node[align=center] at (6,-3.3) {\LARGE \textbf{\textcolor{fttazul}{TITULO}}};
+	\node[align=center] at (12.7,-5) {\LARGE \textbf{\textcolor{fttverde}{SUBTIT}}};
+	\node[align=center] at (12.7,-17) {\Large \textbf{\textcolor{fttverde}{DESCRIPCION}}};
+	\node[xshift=-85mm,yshift=-18mm,anchor=center,rotate=-90,transform shape] at (current page.center){%
+	\includegraphics[height=80mm]{FOTO1}};
+	\node[xshift=0mm,yshift=-18mm,anchor=center,rotate=-90,transform shape] at (current page.center){%
+	\includegraphics[height=80mm]{FOTO2}};
+	\node[xshift=85mm,yshift=-18mm,anchor=center,rotate=-90,transform shape] at (current page.center){%
+	\includegraphics[height=80mm]{FOTO3}};
+\end{tikzpicture}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
